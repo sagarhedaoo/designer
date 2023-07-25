@@ -12,6 +12,8 @@ const CustomButton = ({ type, title, customStyles, handleClick }) => {
         backgroundColor: snap.color,
         color: "#fff",
       };
+    } else {
+      return;
     }
   };
 
