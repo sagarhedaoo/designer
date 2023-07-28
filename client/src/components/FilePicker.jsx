@@ -17,7 +17,7 @@ const FilePicker = ({ file, setFile, readFile }) => {
         </label>
 
         <p className="mt-2 text-gray-500 text-xs truncate">
-          {file === "" ? "No File Selected" : file.name}
+          {file === "" ? "No file selected" : file.name}
         </p>
       </div>
 
@@ -28,7 +28,6 @@ const FilePicker = ({ file, setFile, readFile }) => {
           handleClick={() => readFile("logo")}
           customStyles="text-xs"
         />
-
         <CustomButton
           type="filled"
           title="Full"

@@ -8,7 +8,6 @@ import state from "../store";
 
 const Shirt = () => {
   const snap = useSnapshot(state);
-
   const { nodes, materials } = useGLTF("/shirt_baked.glb");
 
   const logoTexture = useTexture(snap.logoDecal);
@@ -37,6 +36,7 @@ const Shirt = () => {
             map={fullTexture}
           />
         )}
+
         {snap.isLogoTexture && (
           <Decal
             position={[0, 0.04, 0.15]}
